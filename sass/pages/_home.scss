@@ -1,0 +1,50 @@
+.container {
+  min-height: 100vh;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  //   padding-left: 9.6rem;
+  //   padding-right: 9.6rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.fixed-side {
+  padding: 3rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+
+  position: fixed;
+
+  @include respond(tab-port) {
+    position: sticky;
+    height: 100vh;
+    justify-content: center;
+    padding: 1rem;
+
+    width: 100%;
+  }
+}
+
+.sections {
+  margin-left: 40%;
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  @include respond(tab-port) {
+    width: 100%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: auto;
+  }
+}

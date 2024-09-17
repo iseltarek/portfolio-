@@ -1,0 +1,15 @@
+@import "abstract/mixins";
+@import "abstract/varibles";
+
+@import "base/base";
+@import "base/animation";
+
+@import "pages/home";
+
+@import "layout/fixedside";
+@import "layout/about";
+@import "layout/projects";
+@import "layout/skills";
+
+@import "components/btn";
+@import "components/bg-video";

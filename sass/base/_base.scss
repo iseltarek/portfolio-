@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Source Code Pro", monospace;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section__header {
+  opacity: 0;
+
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+  margin-top: 4rem;
+  @include respond(tab-port) {
+    opacity: 1;
+  }
+}
+.skill_header {
+  color: $color-primary;
+  font-size: 1.8rem;
+}
